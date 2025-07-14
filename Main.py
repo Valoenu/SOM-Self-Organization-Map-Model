@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 data = pd.read_csv("Credit_Card_Application.csv")
 
 # Set x and y, 	•	x: all columns except the last (features). y: the last column (approval result: 1 = approved, 0 = rejected)
-y = data.iloc[x: -1].values 
+y = data.iloc[: -1].values 
 x = data.iloc[:, :-1].values
 
 
